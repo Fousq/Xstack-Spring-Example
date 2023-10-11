@@ -24,4 +24,9 @@ public class Trainer implements Entity {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toPrint() {
+        return "Trainer[" + id + ", " + name + "]";
+    }
 }

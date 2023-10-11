@@ -10,6 +10,6 @@ public class Main {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext("kz.zhanbolat");
         EntityService entityService = applicationContext.getBean(EntityService.class);
 
-        System.out.println(entityService.getEntity()); // getting null for entity, but shouldn't. HOW TO FIX ?
+        System.out.println(entityService.getEntity().toPrint()); // now we resolve it with BEAN POST PROCESSOR. BUT WHAT IS IT?
     }
 }
